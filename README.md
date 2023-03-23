@@ -8,3 +8,7 @@ This could be done in two ways: functions and classes. The optimal path was chos
 3. Use npm install.
 4. Create json file in report directory (default name - input.json)
 5. Use "npm start" to run the program with default name on "npm start custom.json" to run the program with custom name
+
+# In addition
+You can extend the code by adding your methods and modules (which are located in the methods and modules folders respectively).
+Main file - app.js
