@@ -3,7 +3,7 @@ const cashOutLegalMethod = (cash, operationInfo) => {
   if (commission >= operationInfo.min.amount) {
     return commission;
   } else {
-    return 0.5;
+    return operationInfo.min.amount;
   }
 };
 

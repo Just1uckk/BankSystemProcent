@@ -3,7 +3,7 @@ const cashInMethod = (cash, operationInfo) => {
   if (commission <= operationInfo.max.amount) {
     return commission;
   } else {
-    return 5;
+    return operationInfo.max.amount;
   }
 };
 

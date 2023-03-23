@@ -1,8 +1,8 @@
 const weekOfTheYear = (date) => {
-  const today = new Date(date);
-  const firstDayOfYear = new Date(today.getFullYear(), 0, 1);
+  const actualDay = new Date(date);
+  const firstDayOfYear = new Date(actualDay.getFullYear(), 0, 1);
   const pastDaysOfYear =
-    (today.valueOf() - firstDayOfYear.valueOf()) / 86400000;
+    (actualDay.valueOf() - firstDayOfYear.valueOf()) / 86400000;
   const weekOfYear = Math.ceil(
     (pastDaysOfYear + firstDayOfYear.getDay() - 1) / 7
   );
